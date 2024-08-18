@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Vendor Management Portal")
 st.markdown("Enter the details of the new vendor below.")
 # Establishing a Google Sheets connection
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+conn = st.connection("gsheets", type=GSheetsConnection)
 # Fetch existing vendors data
 existing_data = conn.read(worksheet="Sheet1", usecols=list(range(2)), ttl=5)
 existing_data = existing_data.dropna(how="all")
