@@ -1,5 +1,3 @@
 st-gsheets-connection
-streamlit
+streamlit==1.22
 pandas
-pip install --upgrade streamlit
-pip install --upgrade pip
