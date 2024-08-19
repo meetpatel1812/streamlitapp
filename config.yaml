@@ -5,16 +5,22 @@ cookie:
 credentials:
   usernames:
     meet:
-      email: meetpatel8122001@gmail.com
-      failed_login_attempts: 0
+      email: meet@gmail.com
       logged_in: false
       name: meet
-      password: $2b$12$4aiKAzcZXQWVfdEAybD0NeOpoyyxfpfoh.TNfKntf6ABPEBIm9yK6
+      password: $2b$12$pWip1kAN8nBrCr6kL2NP3.FHZBOOSdyv3Jxv3XyD9kpai5Zfn9aAW
     spandan99:
       email: Spandan@gmail.com
+      failed_login_attempts: 0
       logged_in: false
       name: Spandan
       password: $2b$12$NlEuLb7PHGH7kdfMBdtwo.Gr0MAQfP1q6PMiCeVdBZjHFu7aWaydK
+    srey:
+      email: srey@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: srey
+      password: $2b$12$C4K1NSicjxhC75ACVPGJsOn0THqALvGvWZcaLLryGoieu0R5d8hDS
 pre-authorized:
   emails:
   - meetpatel8122001@gmail.com
