@@ -1,6 +1,5 @@
 streamlit
 pandas
 numpy
-streamlit_authenticator
 streamlit-authenticator
 matplotlib
