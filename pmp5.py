@@ -9,6 +9,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import schedule
+import time
 
 # Loading config file
 with open('config.yaml', 'r', encoding='utf-8') as file:
