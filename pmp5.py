@@ -2,13 +2,9 @@ import yaml
 import streamlit as st
 from yaml.loader import SafeLoader
 import streamlit_authenticator as stauth
-from streamlit_authenticator.utilities import (CredentialsError,
-                                               ForgotError,
-                                               Hasher,
+from streamlit_authenticator.utilities import (
                                                LoginError,
-                                               RegisterError,
-                                               ResetError,
-                                               UpdateError)
+                                            )
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
