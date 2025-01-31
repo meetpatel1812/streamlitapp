@@ -207,6 +207,9 @@ if st.session_state["authentication_status"]:
     st.dataframe(incorrect_payment_df[['Client Name', 'Payment Got (%)']])
 
     authenticator.logout()
+    while True:
+      schedule.run_pending()
+      time.sleep(1)
 
 
 
@@ -219,9 +222,7 @@ elif st.session_state["authentication_status"] is False:
 elif st.session_state["authentication_status"] is None:
     st.warning('Please enter your username and password')
 
-while True:
-  schedule.run_pending()
-  time.sleep(1)
+
 
 
 # Creating a new user registration widget
