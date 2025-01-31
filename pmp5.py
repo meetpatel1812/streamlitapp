@@ -8,6 +8,7 @@ from streamlit_authenticator.utilities import (
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import schedule
 
 # Loading config file
 with open('config.yaml', 'r', encoding='utf-8') as file:
@@ -205,6 +206,9 @@ if st.session_state["authentication_status"]:
     st.dataframe(incorrect_payment_df[['Client Name', 'Payment Got (%)']])
 
     authenticator.logout()
+    while True:
+      schedule.run_pending()
+      time.sleep(1)
 
 
 
@@ -214,6 +218,7 @@ elif st.session_state["authentication_status"] is False:
     st.error('Username/password is incorrect')
 elif st.session_state["authentication_status"] is None:
     st.warning('Please enter your username and password')
+
 
 
 
