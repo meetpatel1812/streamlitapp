@@ -4,3 +4,4 @@ numpy
 streamlit-authenticator
 matplotlib
 openpyxl
+schedule
